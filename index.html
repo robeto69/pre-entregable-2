@@ -1,0 +1,152 @@
+<!DOCTYPE html> <!--version de html del archivo-->
+<html lang="en"> <!--lenguaje en el que estamos programando-->
+<head>
+    <meta charset="UTF-8"> <!-- se configuran los símbolos a utilizar, por ejemplo ñ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adaptabilidad a dispositivos moviles-->
+    <title>Multishop | Los Mejores Accesorios para tu Coche </title>
+
+    <!--link archivo css de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+
+    <!--link archivo css-->
+    <link rel="stylesheet" href="/css/style.css"> 
+
+     <!--google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body> <!--visible al usuario-->
+
+    <!--inicio menu principal-->
+    <header> <!--etiqueta semantica-->
+
+      <nav class="navbar navbar-expand-lg bg-warning" data-bs-theme="dark">
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand" href="#"> <img src="/assets/Logo_Transparente.png" alt="Logo_Transparente"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/html/Accesorios.html">Accesorios</a>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html/Alfombras.html">Alfombras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html/Repuestos.html">Repuestos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html/Taller.html">Taller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/html/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- inicio bloque principal-->
+
+    <main> <!--etiqueta semantica-->
+
+      <section>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="/assets/shutterstock_532965133.jpg" class="d-block w-100 " alt="Iluminacion">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Iluminacion</h5>
+              <p>Led y Xenon</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/shutterstock_567460636.jpg" class="d-block w-100 " alt="Repuestos">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Repuestos</h5>
+              <p>Para autos chinos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/shutterstock_662804812.jpg" class="d-block w-100 " alt="motos">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Accesorios para Motos</h5>
+              <p>Los mejores accesorios</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="grid_info"> 
+
+      <div class="grid_item_1"> 
+        <p><strong>Nuestro Horario:</strong>
+          Lunes a Viernes de 09:00 a 12:00 y de 13:30 a 18:00. 
+          Sábados de 09:00 a 13:00</p>
+      </div>
+  
+      <div class="grid_item_2"> 
+      <p> <strong>Ubicacion:</strong> Estamos ubicados en calle Isabela 3399, Montevideo.</p> 
+      </div>
+  
+      <div class="grid_item_3">
+           <p><strong>Medios de Pago:</strong> Tarjetas de crédito: Visa, Mastercard, American Express. Tarjeta de Débito: Visa.
+          Efectivo en Redes de Cobranza: Abitab o Red Pagos.  Transferencia Bancaria.</p>
+      </div>
+  
+      </section>
+    </main>
+
+    <a href="https://api.whatsapp.com/send?phone=59897730740" target="_blank" class="link_whatsapp"> 
+    <img src="/assets/whatsapp-01.png" alt="icono whatsapp" class="imagen_whatsapp"></a>  
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+
+    <!--inicio footer-->
+
+    <footer> <!--etiqueta semantica-->
+
+      <span class="placeholder col-12 bg-warning"></span>
+
+        <ul class="footer">
+            <li><a href="https://www.facebook.com/" class="iconos"  target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/"class="iconos" target="_blank"> Instagram</a></li>
+            <li><a href="https://www.youtube.com/" class="iconos" target="_blank">Youtube</a></li>
+        </ul>
+
+    </footer>
+
+</html>
